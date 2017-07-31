@@ -1,7 +1,5 @@
 package tree;
 
-import sun.reflect.generics.tree.Tree;
-
 public class Trees {
 
     /**
