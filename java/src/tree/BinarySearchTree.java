@@ -51,4 +51,29 @@ public class BinarySearchTree {
             }
         }
     }
+
+    /**
+     * Here for mark cumulated sum.
+     */
+    private Integer cumulatedSum = 0;
+
+    /**
+     * Calculate nodes's sum greater than current node
+     */
+    public void rightCumulationSum() {
+        this.rightCumulationSum(root);
+    }
+
+    /**
+     * Calculate right cumulative sum
+     * @param node
+     */
+    public void rightCumulationSum(TreeNode node) {
+        if (node != null) {
+            rightCumulationSum(node.getRight());
+            cumulatedSum += node.getData();
+            node.setData(cumulatedSum - node.getData());
+            rightCumulationSum(node.getLeft());
+        }
+    }
 }
