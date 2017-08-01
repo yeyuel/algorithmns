@@ -18,6 +18,10 @@ public class Main {
         array = getArray();
         QuickSort.sort(array);
         System.out.println(Arrays.toString(array));
+
+        array = getArray();
+        MergeSort.sort(array);
+        System.out.printf(Arrays.toString(array));
     }
 
     /**
