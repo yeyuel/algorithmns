@@ -21,7 +21,11 @@ public class Main {
 
         array = getArray();
         MergeSort.sort(array);
-        System.out.printf(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
+
+        array = getArray();
+        InsertSort.sort(array);
+        System.out.println(Arrays.toString(array));
     }
 
     /**
