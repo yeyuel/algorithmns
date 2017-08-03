@@ -26,6 +26,11 @@ public class Main {
         array = getArray();
         InsertSort.sort(array);
         System.out.println(Arrays.toString(array));
+
+        array = getArray();
+        HeapSort.sort(array);
+        System.out.println(Arrays.toString(array));
+
     }
 
     /**
