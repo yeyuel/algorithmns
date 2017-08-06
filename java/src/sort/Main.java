@@ -31,6 +31,10 @@ public class Main {
         HeapSort.sort(array);
         System.out.println(Arrays.toString(array));
 
+        array = getArray();
+        ShellSort.sort(array);
+        System.out.println(Arrays.toString(array));
+
     }
 
     /**
