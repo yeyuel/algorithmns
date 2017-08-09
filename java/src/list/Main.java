@@ -12,5 +12,11 @@ public class Main {
 
         linkedList.revert();
         System.out.println(linkedList.toString());
+
+        CircleLinkedList circleLinkedList = new CircleLinkedList();
+        for (int number: array) {
+            circleLinkedList.addToTail(number);
+        }
+        System.out.println(circleLinkedList.toString());
     }
 }
